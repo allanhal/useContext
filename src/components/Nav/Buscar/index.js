@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Search } from "@mui/icons-material";
+import { wrapper } from "./style";
 
-export default function Buscar() {
+export default function Buscar(props) {
   const [conteudo, setConteudo] = useState("");
 
   let classes = "input";
@@ -15,9 +16,21 @@ export default function Buscar() {
   }
 
   return (
-    <div className="wrapper">
+    <div
+      style={{
+        ...wrapper,
+        backgroundColor: props.backgroundColor || "white",
+      }}
+    >
       <Search className="icon" />
-      <input className={classes} placeholder="Buscar" value={conteudo} onChange={(event) => { handleOnChange(event); }} />
+      <input
+        className={classes}
+        placeholder="Buscar"
+        value={conteudo}
+        onChange={(event) => {
+          handleOnChange(event);
+        }}
+      />
     </div>
   );
 }

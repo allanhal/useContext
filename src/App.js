@@ -9,7 +9,7 @@ export default function App() {
   const [carrinho, setCarrinho] = useState([]);
 
   return (
-      <Buscar />
+      <Buscar  />
     // <Cachorro.Provider value={{ carrinho, setCarrinho }}>
     //   <>
     //     <Nav />
