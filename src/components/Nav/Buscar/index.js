@@ -17,8 +17,7 @@ export default function Buscar() {
   return (
     <div className="wrapper">
       <Search className="icon" />
-      <input className={classes} placeholder="Buscar" value={conteudo} onChange={(event) => { handleOnChange(event); }}
-      />
+      <input className={classes} placeholder="Buscar" value={conteudo} onChange={(event) => { handleOnChange(event); }} />
     </div>
   );
 }
