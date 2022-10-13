@@ -10,6 +10,7 @@ export default function Nav() {
             <h1>Nav</h1>
             <Buscar />
             <Carrinho />
+            <Carrinho />
         </div>
     )
 }

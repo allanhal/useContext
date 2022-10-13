@@ -9,12 +9,12 @@ export default function App() {
   const [carrinho, setCarrinho] = useState([]);
 
   return (
-      <Buscar  />
-    // <Cachorro.Provider value={{ carrinho, setCarrinho }}>
-    //   <>
-    //     <Nav />
-    //     <Produtos />
-    //   </>
-    // </Cachorro.Provider>
+      // <Buscar  />
+    <Cachorro.Provider value={{ carrinho, setCarrinho }}>
+      <>
+        <Nav />
+        <Produtos />
+      </>
+    </Cachorro.Provider>
   );
 }
